@@ -36,6 +36,6 @@ gcc hello2.c -std=c18 -E -o hello2.i
 11. Se corrige el prontf a printf 
 12. Se compila con el comando ```gcc hello5.c``` y tira un numero random ya que la variable a mostrar no esta puesta y muestra lo que hay en buffer de teclado
 13. se corrige colocando la variable i al printf 
-14. Printf ya viene incluido en c entonces no es necesario escribir la libreria standar para usarlo por eso permite que se ejecute y se compile  , haciendo todas las asociaciones necesarias con la misma .
+14. Printf ya viene incluido en c entonces no es necesario escribir la libreria standar para usarlo por eso permite que se ejecute y se compile  , haciendo todas las asociaciones necesarias con la misma .    
 
 
