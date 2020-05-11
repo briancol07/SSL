@@ -3,11 +3,11 @@
 
 ## Comando utilizado 
 ``` gcc 
-gcc hello2.c -std=c18 -E -o hello2.i
-
+gcc -std=c18 hello2.c -E -o hello2.i
+gcc -std=c18 -E hello3.c -o hello3.i
 ```
 
-> Lo que hace el comando es solo entrar en la parte de preprocesador y mostrar en pantalla lo que hace , pero al incluir el > Error.txt lo guarda en el archivo 
+> Lo que hace el comando es solo entrar en la parte de preprocesador y mostrar en pantalla lo que hace , pero al incluir el  lo guarda en el archivo hello2.i
 
 # Resultados 
 
@@ -31,11 +31,16 @@ gcc hello2.c -std=c18 -E -o hello2.i
 6. Me tira un warning : implicit declaration of funtion 'prontf' , que la funcion prontf 
 7.  se corrige el error  y se cierra la llave al final del codigo.
 8. Se crear el archivo sin tirar error 
-9. ``` gcc hello4.s -c ```
-
+9. ```gcc -std=c18 hello4.o -o hello4```
+10. Al intentar vincular la fuente ensamblada, el enlazador ld falla, indicando que no existe una referencia al simbolo prontf
 11. Se corrige el prontf a printf 
-12. Se compila con el comando ```gcc hello5.c``` y tira un numero random ya que la variable a mostrar no esta puesta y muestra lo que hay en buffer de teclado
+12. Se compila con el comando ```gcc hello5.c``` 
+  este es para crear el codigo en assembler  ```gcc -std=c18 -S hello5.i -o hello5.s```
+  ``` gcc -std=c18 -c hello5.s -o hello5.o```
+  lo construye y compila correctamente pero tira un numero random ya que la variable a mostrar no esta puesta y muestra lo que hay en buffer de teclado
 13. se corrige colocando la variable i al printf 
-14. Printf ya viene incluido en c entonces no es necesario escribir la libreria standar para usarlo por eso permite que se ejecute y se compile  , haciendo todas las asociaciones necesarias con la misma .    
+    ```gcc -std=c18 -E hello6.c -o hello6.i```
+
+14. Funciona correctamente Printf ya viene incluido en c entonces no es necesario escribir la libreria standar para usarlo por eso permite que se ejecute y se compile  , haciendo todas las asociaciones necesarias con la misma .    
 
 
