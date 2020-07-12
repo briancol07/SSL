@@ -5,8 +5,11 @@
 ## Arbol de expresion
 Condicion inicial 
 $$ line = words = Character = 0 $$
-<img width="400" height="500" src="img/graphviz.png">
-<img width="400" height="500" src="img/graphviz2.png">
+</br>
+
+<img width="400" height="500" src="img/graphviz.png"></br>
+<img width="400" height="500" src="img/graphviz2.png"></br>
+<img width="400" height="500" src="img/graphviz3.png"></br>
 
 ## Respuestas 
  * Ventajas y desventajas Wc (Enum-Switch)

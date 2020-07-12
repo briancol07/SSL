@@ -1,0 +1,22 @@
+digraph a {
+ A->Na
+ Na->char
+ Na->"' '"
+ A->Nb
+ Nb->Nc
+ Nc->char2
+ Nc->"\\n"
+ Nb->Nd
+ Nd->Nx
+ Nd->end
+ 
+ A[label = "OR"]
+ Nb[label = "OR"]
+ Nd[label = "equal"]
+ Na[label = "=="]
+ Nc[label = "=="]
+ Nx[label = "Char"]
+ char2[label = "char"]
+ 
+ end[label = "'\\t'"]
+}
