@@ -1,0 +1,16 @@
+digraph a {
+    A->Na
+    A->Nb
+    Nb->Nc 
+    Nb->Nd
+    Nd->Nx
+    Nd->0
+    
+    A[label = "="]
+    Nb[label = "="]
+    Nd[label = "="]
+    Na[label = "New line"]
+    Nc[label = "New Word"]
+    Nx[label = "Character"]
+
+}
