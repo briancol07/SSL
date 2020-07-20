@@ -4,7 +4,8 @@
 
 ## Arbol de expresion
 Condicion inicial 
-$$ line = words = Character = 0 $$
+$$line = words = Character = 0 $$
+
 </br>
 
 <img width="400" height="500" src="img/graphviz.png"></br>
@@ -24,3 +25,8 @@ $$ line = words = Character = 0 $$
      * Mas simple para desarollar ya que no tiene otros tipos de datos 
    * Desventajas:
      * No se puede pasar del codigo a la maquina de estados tan facilmente , ya que es mas abstracto por medio de las variables int 
+
+
+Uso del GOTO:
+Los lenguajes modernos intentan no implementar goto, o saltos incondicionales en su totalidad. 
+Un ejemplo de esto es Rust, en el cual goto ni siquiera se considera una palabra reservada del lenguaje.
